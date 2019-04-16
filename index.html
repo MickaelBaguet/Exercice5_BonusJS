@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Exercice 5</title>
+</head>
+<body>
+
+  <div class="container-fluid text-center">
+    <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">Exercice 5 - Partie Bonus</h1>
+    <p class="lead">Les boutons.</p>
+    </div>
+  </div>
+    <!-- Ajout d'un span vide afin d'afficher le résultat -->
+    <p><button type="button" name="mail" id="mail">Adresse mail</button></p><span id="mailShow"></span>
+    <p><button type="button" name="tel" id="tel">Numéro de téléphone</button></p><span id="telShow"></span>
+  </div>
+
+  <script>
+    // Si on clique sur le bouton mail
+    document.getElementById('mail').addEventListener('click',function(){
+      // On affiche l'adresse mail dans le span
+      document.getElementById('mailShow').innerHTML = "monadressemail@bonjour.com";
+    });
+    // Si on clique sur le bouton tel
+    document.getElementById('tel').addEventListener('click',function(){
+      // On affiche le nuémro de téléphone dans le span
+      document.getElementById('telShow').innerHTML = "03.01.02.03.04"
+    });
+  </script>
+
+
+</body>
+</html>
